@@ -1,0 +1,128 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.options-icon {
+    cursor: pointer;
+}
+
+.chat-window {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.message.bot {
+    text-align: left;
+    background-color: #e1f5fe;
+    align-self: flex-start;
+}
+
+.message.user {
+    text-align: right;
+    background-color: #c8e6c9;
+    align-self: flex-end;
+    margin-left: auto; /* Ensure it aligns to the right */
+}
+
+.fruit-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fruit-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.fruit-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.fruit-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fruit-details {
+    text-align: left;
+}
+
+.fruit-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.typing-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    justify-content: flex-end; /* Align elements to the right */
+}
+
+.typing-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px; /* Add space between input and button */
+}
+
+.typing-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.voice-icon {
+    margin-right: 10px; /* Add space between button and mic icon */
+    cursor: pointer;
+}
